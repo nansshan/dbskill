@@ -86,14 +86,19 @@ Skill 之间会自动推荐下一步。比如：
 
 ## 安装
 
+![demo](demo.gif)
+
+**推荐：Claude Code 插件市场（一键安装，自动更新）**
+
 ```bash
-npx skills add dontbesilent2025/dbskill
+claude plugin marketplace add dontbesilent2025/dbskill
+claude plugin install dbs@dontbesilent-skills
 ```
 
-或手动：
+**其他方式：**
 
 ```bash
-git clone https://github.com/dontbesilent2025/dbskill.git /tmp/dbskill && cp -r /tmp/dbskill/skills/dbs* ~/.claude/skills/ && rm -rf /tmp/dbskill
+npx skills add dontbesilent2025/dbskill
 ```
 
 安装后在 Claude Code 中输入 `/dbs` 即可。
